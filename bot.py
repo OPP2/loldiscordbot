@@ -8,7 +8,7 @@ token = os.environ['BOT_TOKEN']
 
 @app.event
 async def on_ready():
-    game = discord.Game("//")
+    game = discord.Game(".도움")
     print('다음으로 로그인합니다: ')
     print(app.user.name)
     print('connection was succesful')
@@ -31,7 +31,7 @@ async def 챔피언(ctx, champion_name):
     await ctx.send(url1)
 
 
-@app.command(aliases=['도움말'])
+@app.command(aliases=['도움말', 'ㄷㅇ'])
 async def 도움(ctx):
     space = 'ㅤ'
 
@@ -39,11 +39,11 @@ async def 도움(ctx):
 
     embed.add_field(name=space, value=space, inline=False)
 
-    embed.add_field(name=f'소환사 정보 검색', value=f'!전적 <소환사이름>', inline=False)
+    embed.add_field(name=f'소환사 정보 검색', value=f'.전적 <소환사이름>', inline=False)
 
     embed.add_field(name=space, value=space, inline=False)
 
-    embed.add_field(name=f'챔피언 정보 검색', value=f'!챔피언 <챔피언이름>', inline=False)
+    embed.add_field(name=f'챔피언 정보 검색', value=f'.챔피언 <챔피언이름>', inline=False)
     await ctx.send(embed=embed)
 
 
