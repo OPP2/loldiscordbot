@@ -45,5 +45,6 @@ async def 도움(ctx):
 async def embed(ctx):
     embed1 = discord.Embed(title="Example Embed", description="이것은 Embed입니다.", color=0x00ff56)
     embed.set_thumbnail(url="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnamu.wiki%2Fw%2F%25EB%25A6%25AC%25EA%25B7%25B8%2520%25EC%2598%25A4%25EB%25B8%258C%2520%25EB%25A0%2588%25EC%25A0%2584%25EB%2593%259C%2F%25EB%259E%25AD%25ED%2581%25AC%2520%25EA%25B2%258C%25EC%259E%2584&psig=AOvVaw3iF3jdC9kOz2TBlgSsONk0&ust=1632474777816000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjGqczglPMCFQAAAAAdAAAAABAD")
+    await ctx.send(embed=embed1)
 
 app.run(token)
